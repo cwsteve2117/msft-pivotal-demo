@@ -70,7 +70,7 @@ class FrontendController {
 	}
 
 	String getCoversFallbackMethod(Model model) {
-        model.addAttribute("covers", new Cover("Default Cover"));
+        model.addAttribute("covers", new Cover("Default Cover Test"));
         return "index";
     }
 }
