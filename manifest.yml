@@ -1,6 +1,6 @@
 ---
 applications:
-  - name: cover-server
+  - name: cover-server-cs
     path: ./cover-server/target/cover-server.jar
     memory: 1024M
     services:
@@ -13,7 +13,7 @@ applications:
       spring_datasource_url: '${cloud.services.sqlserver.connection.uri}'
       spring_jpa_properties_hibernate_dialect: 'org.hibernate.dialect.SQLServer2012Dialect'
 
-  - name: cover-client
+  - name: cover-client-cs
     path: ./cover-client/target/cover-client.jar
     memory: 1024M
     services:
@@ -22,7 +22,7 @@ applications:
 #      - breaker
       - rabbit
 
-  - name: frontend
+  - name: frontend-cs
     path: ./frontend/target/frontend.jar
     memory: 1024M
     services:
@@ -31,7 +31,7 @@ applications:
 #      - breaker
       - rabbit
 
-  - name: cover-zipkin
+  - name: cover-zipkin-cs
     memory: 1024M
     path: ./zipkin-server/target/zipkin-server.jar
     services:
