@@ -7,7 +7,7 @@ applications:
       - registry
       - config
       - rabbit
-      - azuresql-demo
+      - azuresqldb-cs
     env:
       spring_datasource_driver-class-name: 'com.microsoft.sqlserver.jdbc.SQLServerDriver'
       spring_datasource_url: '${cloud.services.sqlserver.connection.uri}'
